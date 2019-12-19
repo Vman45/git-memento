@@ -1,3 +1,49 @@
+@import 'reset';
+@import 'typo';
+
+/*------------------------------------*\
+  $ GEN
+\*------------------------------------*/
+*,*:after, *:before { box-sizing:border-box; }
+
+html { 
+  font-size: 62.5%; 
+  font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
 body {
   background-color: #333;
+  color: #fff;
+}
+
+.container {
+  outline: 1px dashed #000;
+  margin: 0 auto; padding: 1rem;
+  max-width: 980px;
+  text-align: center;
+}
+/*------------------------------------*\
+  $ HEADER
+\*------------------------------------*/
+header {
+  margin-bottom: 2rem;
+  a {
+    color: inherit;
+    margin-right: 1rem;
+  }
+}
+/*------------------------------------*\
+  $ TITLE
+\*------------------------------------*/
+.title-01 { 
+  font: 4rem/1 'collegiateregular';
+  span {
+    font: 100 3.8rem/1 'Lato', sans-serif;
+  }
+}
+/*------------------------------------*\
+  $ TEXT
+\*------------------------------------*/
+.text-01 { 
+  font: 2rem/1 'Lato', sans-serif; 
 }
