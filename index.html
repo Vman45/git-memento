@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Git Memento</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css'/>
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+  <link rel="manifest" href="img/favicon//site.webmanifest">
+  <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css' />
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <header>
-      <img src="img/logo.png" class="logo" alt="Logo de Git Memento" width="80" height="87" >
+      <img src="img/logo.png" class="logo" alt="Logo de Git Memento" width="80" height="87">
       <h1 class="title-01">git<span>memento</span></h1>
     </header>
-    <p class="text-01">
-      Une liste des commandes git.
-    </p>
+
+    <table class="table">
+      <tbody>
+        <tr class="tin-table-header">
+          <th class="tin-pricing-th">Branches</th>
+          <th class="tin-pricing-th"></th>
+          <th class="tin-pricing-th"></th>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="tin-pricing-th" colspan="4">
+            Lister les branches locales
+          </th>
+        </tr>
+        <tr class="tin-pricing-table-row">
+          <td class="tin-pricing-table-data">
+            Lister les branches locales
+          </td>
+          <td class="tin-pricing-table-data">git branch</td>
+          <td class="tin-pricing-table-data"><i class="fas fa-clipboard"></i></td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="tin-pricing-th" colspan="4">Créer une branche et switcher dessus</th>
+        </tr>
+        <tr class="tin-pricing-table-row">
+          <td class="tin-pricing-table-data">Créer une branche et switcher dessus</td>
+          <td class="tin-pricing-table-data">git checkout -b (nom-branche)</td>
+          <td class="tin-pricing-table-data"><i class="fas fa-clipboard"></i></td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="tin-pricing-th" colspan="4">Changer le nom d'une branche</th>
+        </tr>
+        <tr class="tin-pricing-table-row">
+          <td class="tin-pricing-table-data">Changer le nom d'une branche</td>
+          <td class="tin-pricing-table-data">git branch -m (nom-ancienne-branche) (nom-nouvelle-branche)</td>
+          <td class="tin-pricing-table-data"><i class="fas fa-clipboard"></i></td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="tin-pricing-th" colspan="4">Switcher sur une branche existante</th>
+        </tr>
+        <tr class="tin-pricing-table-row">
+          <td class="tin-pricing-table-data">Switcher sur une branche existante</td>
+          <td class="tin-pricing-table-data">git checkout (nom-branche)</td>
+          <td class="tin-pricing-table-data"><i class="fas fa-clipboard"></i></td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="tin-pricing-th" colspan="4">Renommer la branche courante</th>
+        </tr>
+        <tr class="tin-pricing-table-row">
+          <td class="tin-pricing-table-data">Renommer la branche courante</td>
+          <td class="tin-pricing-table-data">git branch -m (nouveau-nom)</td>
+          <td class="tin-pricing-table-data"><i class="fas fa-clipboard"></i></td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="tin-pricing-th" colspan="4">Renommer la branche courante</th>
+        </tr>
+        <tr class="tin-pricing-table-row">
+          <td class="tin-pricing-table-data">Supprimer une branche en local</td>
+          <td class="tin-pricing-table-data">git branch -d (nom-branche)</td>
+          <td class="tin-pricing-table-data"><i class="fas fa-clipboard"></i></<td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>
