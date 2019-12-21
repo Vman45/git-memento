@@ -4,11 +4,16 @@
   width: 100%;
   button {
     background-color: #52bbe7;
-    border: none;
+    border: 1px solid #52bbe7;
     border-radius: 1.5rem;
     font: 1.2rem/1 'Lato', sans-serif; 
     outline: none;
     padding: .5rem 1rem;
+    &:hover {
+      background-color: transparent;
+      color: #52bbe7;
+      cursor: pointer;
+    }
   }
   .git-command-row:nth-child(4n + 1):not(:first-child) {
     background-color: #222;
