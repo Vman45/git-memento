@@ -5,14 +5,10 @@
   button {
     background-color: #52bbe7;
     border: none;
-    border-radius: 50%;
-    font: 1.5rem/1 'Lato', sans-serif; 
+    border-radius: 1.5rem;
+    font: 1.2rem/1 'Lato', sans-serif; 
     outline: none;
     padding: .5rem 1rem;
-    width: 4rem; height: 4rem;
-    @include md-(phone) {
-      position: absolute; right: 0; top:-90%;
-    }
   }
   .git-command-row:nth-child(4n + 1):not(:first-child) {
     background-color: #222;
@@ -38,14 +34,21 @@
     text-transform: uppercase;
     width: 30%;
     @include md-(phone) {
-      width: 100%;
+      text-align: left;
     }
   }
   .tin-pricing-th:nth-child(2) {
     width: 40%;
+    @include md-(phone) {
+      display: none;
+    }
   }
   .tin-pricing-th:nth-child(3)  {
     width: 10%;
+    @include md-(phone) {
+      position: absolute; right: 1rem; top: 50%;
+      transform: translateY(-50%);
+    }
   }
   .cat-command {
     background-color: #ccc;
@@ -68,6 +71,7 @@
     &:nth-child(3) {
       border: none;
       text-align: center;
+      width: 10%;
     }
     @include md-(phone) {
       padding: 0 0 1rem 0;
@@ -89,7 +93,6 @@
     }
     @include md-(phone) {
       display: table-row;
-      position: relative;
     }
   }
 }
