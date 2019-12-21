@@ -2,19 +2,18 @@
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  @include md-(phone) {
-    .tin-pricing-table-row {
-      font-size: 2.2rem;
-    }
-  }
-
-  .tin-pricing-table-row:nth-child(4n + 1):not(:first-child) {
+  .git-command-row:nth-child(4n + 1):not(:first-child) {
     background-color: #222;
     @include md-(phone) {
       background-color: initial;
     }
   }
-  .tin-pricing-table-row:nth-child(4n + 1):not(:first-child) .tin-pricing-table-data {
+  .git-command-row {
+    @include md-(phone) {
+      border-bottom: 2px solid #222;
+    }
+  }
+  .git-command-row:nth-child(4n + 1):not(:first-child) .git-command-data {
     border-right: 1px solid #333;
   }
   .tin-pricing-th:nth-child(1) {
@@ -32,12 +31,15 @@
   .tin-pricing-th:nth-child(3)  {
     width: 10%;
   }
-  .tin-table-header {
+  .cat-command {
     background-color: #ccc;
     color: #333;
     text-align: left;
+    @include md-(phone) {
+      text-align: center;
+    }
   }
-  .tin-pricing-table-data {
+  .git-command-data {
     color: #fff;
     font: 1.5rem/1 'Lato', sans-serif; 
     padding: 1.2rem;
@@ -52,21 +54,20 @@
       text-align: center;
     }
     @include md-(phone) {
+      padding: 0 0 1rem 0;
       &:first-child {
         display: none;
       }
       &:last-child {
         border-right: 0;
       }
-      padding: 0 1.2rem 0;
-      border-right: 1px solid #262626;
     }
   }
   .alt-header {
     display: none;
     .tin-pricing-th {
       text-align: left;
-      font: 1rem/1 'Lato', sans-serif;
+      font: 1.2rem/1 'Lato', sans-serif;
       padding: 10px 0;
     }
     @include md-(phone) {
