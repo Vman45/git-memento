@@ -3,16 +3,23 @@
   border-spacing: 0;
   width: 100%;
   button {
-    background-color: #52bbe7;
-    border: 1px solid #52bbe7;
+    background-color: #009fe3;
+    border: 1px solid #009fe3;
     border-radius: 1.5rem;
     font: 1.2rem/1 'Lato', sans-serif; 
     outline: none;
     padding: .5rem 1rem;
     &:hover {
       background-color: transparent;
-      color: #52bbe7;
+      color: #009fe3;
       cursor: pointer;
+    }
+  }
+  button.copied {
+    background-color: #3eac21;
+    border: 1px solid #3eac21;
+    &:hover {
+      color: initial
     }
   }
   .git-command-row:nth-child(4n + 1):not(:first-child) {
@@ -33,7 +40,7 @@
       border-right: 0;
     }
   }
-  .tin-pricing-th:nth-child(1) {
+  .cat-title:nth-child(1) {
     font: 2rem/1 'Lato', sans-serif; 
     padding: 1rem;
     text-transform: uppercase;
@@ -42,13 +49,13 @@
       text-align: left;
     }
   }
-  .tin-pricing-th:nth-child(2) {
+  .cat-title:nth-child(2) {
     width: 40%;
     @include md-(phone) {
       display: none;
     }
   }
-  .tin-pricing-th:nth-child(3)  {
+  .cat-title:nth-child(3)  {
     width: 10%;
     @include md-(phone) {
       position: absolute; right: 1rem; top: 50%;
@@ -65,18 +72,21 @@
   }
   .git-command-data {
     color: #fff;
-    font: 1.5rem/1 'Lato', sans-serif; 
+    font: 1.5rem/1.5 'Lato', sans-serif; 
     padding: 1.2rem;
     text-align: left;
     border-right: 1px solid #222;
     vertical-align: middle;
     &:nth-child(2) {
-      color: #52bbe7;
+      color: #009fe3;
     }
     &:nth-child(3) {
       border: none;
       text-align: center;
       width: 10%;
+      @include md-(phone) {
+        text-align: right;
+      }
     }
     @include md-(phone) {
       padding: 0 0 1rem 0;
@@ -91,10 +101,13 @@
   }
   .alt-header {
     display: none;
-    .tin-pricing-th {
+    .cat-command-title{
       text-align: left;
-      font: 1.2rem/1 'Lato', sans-serif;
-      padding: 10px 0;
+      font: 1.5rem/1.5 'Lato', sans-serif;
+      padding: 1rem 0 0;
+      @include md-(medium-phone) {
+        padding: 1rem 7rem 0 0;
+      }
     }
     @include md-(phone) {
       display: table-row;
