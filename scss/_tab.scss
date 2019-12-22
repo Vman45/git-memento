@@ -7,7 +7,6 @@
     border: 1px solid #009fe3;
     border-radius: 1.5rem;
     font: 1.2rem/1 'Lato', sans-serif; 
-    outline: none;
     padding: .5rem 1rem;
     &:hover {
       background-color: transparent;
@@ -39,6 +38,9 @@
     @include md-(phone) {
       border-right: 0;
     }
+  }
+  .fas {
+    margin-right: .5rem;
   }
   .cat-title:nth-child(1) {
     font: 2rem/1 'Lato', sans-serif; 

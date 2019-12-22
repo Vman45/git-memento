@@ -37,10 +37,6 @@ for(var i = 0; i < copyBtn.length; i++) {
     copyBtn[i].addEventListener('click', function (event) {
         copyToClipboard(this.getAttribute("name"));
 
-        // Indicate last copied item
-        for(var i = 0; i< copyBtn.length; i++) {
-          copyBtn[i].innerHTML = '<i class="fas fa-check"></i>&nbsp;&nbsp;Copier';
-          copyBtn[i].classList.add("copied");
-        }
+        this.classList.add("copied");
     });
 }
