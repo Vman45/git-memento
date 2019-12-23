@@ -25,6 +25,12 @@
       <h1 class="title-01">git<span>memento</span></h1>
     </header>
 
+    <p class="text-01">
+      Liste non exhaustive de commandes pour git
+      <br>
+      Suivez-moi sur <a href="https://twitter.com/adel_kamel">@adel_kamel</a> pour ne pas manquer les évolutions
+    </p>
+
     <!-- BRANCHES -->
     <table class="table branches">
       <tbody>
@@ -198,9 +204,89 @@
       </tbody>
     </table>
 
+    <!-- NETTOYER -->
+    <table class="table clean">
+      <tbody>
+        <tr class="cat-command">
+          <th class="cat-title"><i class="fas fa-broom"></i> Nettoyer</th>
+          <th class="cat-title"></th>
+          <th class="cat-title"></th>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">
+            Supprimez tous les fichiers non suivis
+          </th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">
+            Supprimez tous les fichiers non suivis
+          </td>
+          <td class="git-command-data"><code type="text">git clean -f</code></td>
+          <td class="git-command-data">
+            <button name="git clean -f" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Supprimez tous les fichiers et répertoires non suivis</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Supprimez tous les fichiers et répertoires non suivis</td>
+          <td class="git-command-data">git clean -df</td>
+          <td class="git-command-data">
+            <button name="git clean -df" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Historique des 2 derniers commits avec les diff.</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Historique des 2 derniers commits avec les diff.</td>
+          <td class="git-command-data">git log -p -2</td>
+          <td class="git-command-data">
+            <button name="git log -p -2" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Toutes les modifications en locales</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Toutes les modifications en locales</td>
+          <td class="git-command-data">git diff</td>
+          <td class="git-command-data">
+            <button name="git diff" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Modification sur un fichier</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Modification sur un fichier</td>
+          <td class="git-command-data">git diff (nom fichier)</td>
+          <td class="git-command-data">
+            <button name="git diff (nom fichier)" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
     <footer>
-      <p class="text-01">
-        Inspiré par <a href="https://twitter.com/tiivik">@tiivik</a> - <a href="https://gitsheet.wtf/"> GitSheet</a>
+      <p>
+        Inspiré par <a href="https://twitter.com/tiivik" target="_blank">@tiivik</a> - <a href="https://gitsheet.wtf/" target="_blank"> GitSheet</a>
       </p>
     </footer>
   </div>
