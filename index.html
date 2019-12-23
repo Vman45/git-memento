@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,9 +69,9 @@
         </tr>
         <tr class="git-command-row">
           <td class="git-command-data">Changer le nom d'une branche</td>
-          <td class="git-command-data">git branch -m (nom-ancienne-branche) (nom-nouvelle-branche)</td>
+          <td class="git-command-data">git branch -m (ancien-nom) (nouveau-nom)</td>
           <td class="git-command-data">
-            <button name="git branch -m (nom-ancienne-branche) (nom-nouvelle-branche)" class="toCopy" type="button">
+            <button name="git branch -m (ancien-nom) (nouveau-nom)" class="toCopy" type="button">
               <i class="fas fa-clipboard"></i>Copier
             </button>
           </td>
@@ -118,6 +117,92 @@
         </tr>
       </tbody>
     </table>
+
+    <!-- LOGS -->
+    <table class="table logs">
+      <tbody>
+        <tr class="cat-command">
+          <th class="cat-title"><i class="far fa-sticky-note"></i> Logs</th>
+          <th class="cat-title"></th>
+          <th class="cat-title"></th>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">
+            Historique des commits sur une seule ligne
+          </th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">
+            Historique des commits sur une seule ligne
+          </td>
+          <td class="git-command-data"><code type="text">git log --oneline</code></td>
+          <td class="git-command-data">
+            <button name="git log --oneline" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Historique des 2 derniers commits</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Historique des 2 derniers commits</td>
+          <td class="git-command-data">git log -2</td>
+          <td class="git-command-data">
+            <button name="git log -2" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Historique des 2 derniers commits avec les diff.</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Historique des 2 derniers commits avec les diff.</td>
+          <td class="git-command-data">git log -p -2</td>
+          <td class="git-command-data">
+            <button name="git log -p -2" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Toutes les modifications en locales</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Toutes les modifications en locales</td>
+          <td class="git-command-data">git diff</td>
+          <td class="git-command-data">
+            <button name="git diff" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+
+        <tr class="alt-header">
+          <th class="cat-command-title" colspan="4">Modification sur un fichier</th>
+        </tr>
+        <tr class="git-command-row">
+          <td class="git-command-data">Modification sur un fichier</td>
+          <td class="git-command-data">git diff (nom fichier)</td>
+          <td class="git-command-data">
+            <button name="git diff (nom fichier)" class="toCopy" type="button">
+              <i class="fas fa-clipboard"></i>Copier
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <p class="text-01">
+        Inspiré par <a href="https://twitter.com/tiivik">@tiivik</a> - <a href="https://gitsheet.wtf/"> GitSheet</a>
+      </p>
+    </footer>
   </div>
 </body>
 </html>

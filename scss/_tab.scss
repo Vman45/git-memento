@@ -1,6 +1,7 @@
 .table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 3.5rem;
   width: 100%;
   button {
     background-color: #009fe3;
@@ -12,6 +13,9 @@
       background-color: transparent;
       color: #009fe3;
       cursor: pointer;
+    }
+    .fas {
+      margin-right: .5rem;
     }
   }
   button.copied {
@@ -39,8 +43,10 @@
       border-right: 0;
     }
   }
-  .fas {
-    margin-right: .5rem;
+  
+  .cat-title .fas, 
+  .cat-title .far {
+    margin-right: 1.5rem;
   }
   .cat-title:nth-child(1) {
     font: 2rem/1 'Lato', sans-serif; 
