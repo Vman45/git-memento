@@ -11,7 +11,8 @@
     padding: .5rem 1rem;
     &:hover {
       background-color: transparent;
-      color: #009fe3;
+      border: 1px solid #edb800;
+      color: #edb800;
       cursor: pointer;
     }
     .fas {
@@ -46,10 +47,10 @@
   
   .cat-title .fas, 
   .cat-title .far {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
   }
   .cat-title:nth-child(1) {
-    font: 2rem/1 'Lato', sans-serif; 
+    font: 900 2rem/1 'Lato', sans-serif; 
     padding: 1rem;
     text-transform: uppercase;
     width: 30%;
