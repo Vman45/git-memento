@@ -1,12 +1,17 @@
-
 /*------------------------------------*\
   $ GEN
 \*------------------------------------*/
-*,*:after, *:before { box-sizing:border-box; }
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 
-html { 
-  font-size: 62.5%; 
-  font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+html {
+  font-size: 62.5%;
+  font-size: calc(
+    1em * 0.625
+  ); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
 }
 
 body {
@@ -15,7 +20,8 @@ body {
 }
 
 .container {
-  margin: 0 auto; padding: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
   max-width: 80%;
   text-align: center;
 }
@@ -32,7 +38,7 @@ header {
 /*------------------------------------*\
   $ TITLE
 \*------------------------------------*/
-.title-01 { 
+.title-01 {
   font: 4rem/1 'collegiateregular';
   span {
     font: 100 3.8rem/1 'Lato', sans-serif;
@@ -41,7 +47,7 @@ header {
 /*------------------------------------*\
   $ TEXT
 \*------------------------------------*/
-.text-01 { 
+.text-01 {
   @include link;
   font: 1.7rem/1.2 'Lato', sans-serif;
   margin-bottom: 2rem;
@@ -52,6 +58,34 @@ header {
 footer {
   @include link;
   p {
-    font: 1.2rem/1 'Lato', sans-serif; 
+    font: 1.2rem/1 'Lato', sans-serif;
+  }
+}
+/*------------------------------------*\
+  $ OCTO CAT
+\*------------------------------------*/
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
   }
 }
